@@ -9,5 +9,5 @@ public class DataContext:IdentityDbContext<User>
     public DataContext(DbContextOptions options) : base(options)
     {
     }
-
+    public DbSet<Student> Students { get; set; }
 }
